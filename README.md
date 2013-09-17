@@ -7,7 +7,7 @@ In some case, that use an _UIBackdropView's instance.
 
 TBBackdropView is the _UIBackgdropView's wrapper class.
 
-![](http://gifzo.net/xrrWEGP7N1.gif "TBBackdropView")
+![](http://gifzo.net/BRnc0bQg3i8.gif "TBBackdropView")
 
 ## Usage
 ```objective-c
