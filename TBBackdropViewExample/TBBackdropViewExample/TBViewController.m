@@ -29,7 +29,7 @@
     [super viewDidAppear:animated];
     
     for (int i = 0; i < 14; i++) {
-        int x = (i % 2) ? 35 : 160;
+        int x = (i % 2) ? 160 : 35;
         int y = 60 * (i/2) + 80;
         TBBackdropView *dropView =
         [[TBBackdropView alloc] initWithFrame:CGRectMake(x, y, 125, 50)
