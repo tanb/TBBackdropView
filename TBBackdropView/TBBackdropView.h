@@ -7,20 +7,22 @@
 //
 
 typedef NS_ENUM(NSInteger, TBBackdropViewSettingsType) {
-    TBBackdropViewSettingsBlur = 0,
+    TBBackdropViewSettings = 0,
     TBBackdropViewSettingsAdaptiveLight = 1,
-    TBBackdropViewSettingsColored = 2,
-    TBBackdropViewSettingsColorSample = 3,
-    TBBackdropViewSettingsDark = 4,
-    TBBackdropViewSettingsDarkLow = 5,
-    TBBackdropViewSettingsDarkWithZoom = 6,
-    TBBackdropViewSettingsLight = 7,
-    TBBackdropViewSettingsLightLow = 8,
-    TBBackdropViewSettingsNonAdaptive = 9,
-    TBBackdropViewSettingsNone = 10,
-    TBBackdropViewSettingsSemiLight = 11,
-    TBBackdropViewSettingsUltraDark = 12,
-    TBBackdropViewSettingsUltraLight = 13
+    TBBackdropViewSettingsBlur = 2,
+    TBBackdropViewSettingsColored = 3,
+    TBBackdropViewSettingsColorSample = 4,
+    TBBackdropViewSettingsCombiner = 5,
+    TBBackdropViewSettingsDark = 6,
+    TBBackdropViewSettingsDarkLow = 7,
+    TBBackdropViewSettingsDarkWithZoom = 8,
+    TBBackdropViewSettingsLight = 9,
+    TBBackdropViewSettingsLightLow = 10,
+    TBBackdropViewSettingsNonAdaptive = 11,
+    TBBackdropViewSettingsNone = 12,
+    TBBackdropViewSettingsSemiLight = 13,
+    TBBackdropViewSettingsUltraDark = 14,
+    TBBackdropViewSettingsUltraLight = 15
 };
 
 

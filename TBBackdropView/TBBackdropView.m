@@ -32,7 +32,7 @@
     [inv invoke];
     
     [self addSubview:_backdropView];
-    
+
     return self;
 }
 
@@ -49,13 +49,23 @@
 {
     id backdropViewSettings = nil;
     switch (settings) {
-        case TBBackdropViewSettingsBlur:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsUltraDark");
+        case TBBackdropViewSettings:{
+            Class klass = NSClassFromString(@"_UIBackdropViewSettings");
             backdropViewSettings = [klass new];
         }
             break;
         case TBBackdropViewSettingsAdaptiveLight:{
             Class klass = NSClassFromString(@"_UIBackdropViewSettingsAdaptiveLight");
+            backdropViewSettings = [klass new];
+        }
+            break;
+        case TBBackdropViewSettingsBlur:{
+            Class klass = NSClassFromString(@"_UIBackdropViewSettingsUltraDark");
+            backdropViewSettings = [klass new];
+        }
+            break;
+        case TBBackdropViewSettingsCombiner:{
+            Class klass = NSClassFromString(@"_UIBackdropViewSettingsCombiner");
             backdropViewSettings = [klass new];
         }
             break;
@@ -119,7 +129,6 @@
             backdropViewSettings = [klass new];
         }
             break;
-            
             
         default:
             break;
