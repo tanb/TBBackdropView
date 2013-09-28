@@ -7,6 +7,23 @@
 //
 
 #import "TBBackdropView.h"
+#import "TBBackdropViewSettings.h"
+#import "TBBackdropViewSettingsLight.h"
+#import "TBBackdropViewSettingsAdaptiveLight.h"
+#import "TBBackdropViewSettingsBlur.h"
+#import "TBBackdropViewSettingsColored.h"
+#import "TBBackdropViewSettingsColorSample.h"
+#import "TBBackdropViewSettingsCombiner.h"
+#import "TBBackdropViewSettingsDark.h"
+#import "TBBackdropViewSettingsDarkLow.h"
+#import "TBBackdropViewSettingsDarkWithZoom.h"
+#import "TBBackdropViewSettingsLightLow.h"
+#import "TBBackdropViewSettingsNonAdaptive.h"
+#import "TBBackdropViewSettingsNone.h"
+#import "TBBackdropViewSettingsSemiLight.h"
+#import "TBBackdropViewSettingsUltraDark.h"
+#import "TBBackdropViewSettingsUltraLight.h"
+
 
 @implementation TBBackdropView
 
@@ -15,12 +32,13 @@
     self = [super initWithFrame:frame];
     if (!self) return nil;
     self.backgroundColor = [UIColor clearColor];
-    
+
     Class klass = NSClassFromString(@"_UIBackdropView");
     _backdropView = [klass alloc];
     
     CGRect bounds = self.bounds;
-    id settings = [self _generateBackdropViewSettingsForSettingsType:settingsType];
+    TBBackdropViewSettings *settings = [self _generateBackdropViewSettingsForSettingsType:settingsType];
+    id backdropViewSettings = settings->_backdropViewSettings;
     
     SEL sel = NSSelectorFromString(@"initWithFrame:settings:");
     NSMethodSignature *msig = [_backdropView methodSignatureForSelector:sel];
@@ -28,7 +46,7 @@
     [inv setSelector:sel];
     [inv setTarget:_backdropView];
     [inv setArgument:&bounds atIndex:2];
-    [inv setArgument:&settings atIndex:3];
+    [inv setArgument:&backdropViewSettings atIndex:3];
     [inv invoke];
     
     [self addSubview:_backdropView];
@@ -38,7 +56,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [self initWithFrame:frame settingsType:TBBackdropViewSettingsBlur];
+    self = [self initWithFrame:frame settingsType:TBBackdropViewSettingsTypeBlur];
     if (!self) return nil;
 
     return self;
@@ -49,84 +67,84 @@
 {
     id backdropViewSettings = nil;
     switch (settings) {
-        case TBBackdropViewSettings:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettings");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeDefault:{
+            backdropViewSettings =
+            [[TBBackdropViewSettings alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsAdaptiveLight:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsAdaptiveLight");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeAdaptiveLight:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsAdaptiveLight alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsBlur:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsUltraDark");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeBlur:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsBlur alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsCombiner:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsCombiner");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeCombiner:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsCombiner alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsColored:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsColored");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeColored:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsColored alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsColorSample:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsColorSample");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeColorSample:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsColorSample alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsDark:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsDark");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeDark:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsDark alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsDarkLow:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsDarkLow");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeDarkLow:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsDarkLow alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsDarkWithZoom:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsDarkWithZoom");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeDarkWithZoom:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsDarkWithZoom alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsLight:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsLight");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeLight:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsLight alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsLightLow:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsLightLow");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeLightLow:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsLightLow alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsNonAdaptive:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsNonAdaptive");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeNonAdaptive:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsNonAdaptive alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsNone:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsNone");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeNone:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsNone alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsSemiLight:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsSemiLight");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeSemiLight:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsSemiLight alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsUltraDark:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsUltraDark");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeUltraDark:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsUltraDark alloc] initWithDefaultValues];
         }
             break;
-        case TBBackdropViewSettingsUltraLight:{
-            Class klass = NSClassFromString(@"_UIBackdropViewSettingsUltraLight");
-            backdropViewSettings = [klass new];
+        case TBBackdropViewSettingsTypeUltraLight:{
+            backdropViewSettings =
+            [[TBBackdropViewSettingsUltraLight alloc] initWithDefaultValues];
         }
             break;
             

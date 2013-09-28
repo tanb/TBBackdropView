@@ -23,6 +23,22 @@
 		A7B5021E17E8B2F100725430 /* TBBackdropViewExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B5021D17E8B2F100725430 /* TBBackdropViewExampleTests.m */; };
 		A7B5022A17E8B41F00725430 /* TBTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B5022917E8B41F00725430 /* TBTableManager.m */; };
 		A7B5022D17E8B98E00725430 /* TBBackdropView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B5022C17E8B98E00725430 /* TBBackdropView.m */; };
+		A7DBCA4F17F69C1D00CB9878 /* TBBackdropViewSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA4E17F69C1D00CB9878 /* TBBackdropViewSettings.m */; };
+		A7DBCA5517F6A47700CB9878 /* TBBackdropViewSettingsLight.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA5417F6A47700CB9878 /* TBBackdropViewSettingsLight.m */; };
+		A7DBCA5817F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA5717F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.m */; };
+		A7DBCA5B17F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA5A17F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.m */; };
+		A7DBCA5E17F6AA0300CB9878 /* TBBackdropViewSettingsColored.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA5D17F6AA0300CB9878 /* TBBackdropViewSettingsColored.m */; };
+		A7DBCA6117F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA6017F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.m */; };
+		A7DBCA6417F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA6317F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.m */; };
+		A7DBCA6C17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA6B17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.m */; };
+		A7DBCA7517F6ADCC00CB9878 /* TBBackdropViewSettingsDark.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA7417F6ADCC00CB9878 /* TBBackdropViewSettingsDark.m */; };
+		A7DBCA7817F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA7717F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.m */; };
+		A7DBCA7B17F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA7A17F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.m */; };
+		A7DBCA7E17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA7D17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.m */; };
+		A7DBCA8117F6B03800CB9878 /* TBBackdropViewSettingsNone.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA8017F6B03800CB9878 /* TBBackdropViewSettingsNone.m */; };
+		A7DBCA8417F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA8317F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.m */; };
+		A7DBCA8717F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA8617F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m */; };
+		A7DBCA8D17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBCA8C17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +75,38 @@
 		A7B5022917E8B41F00725430 /* TBTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBTableManager.m; sourceTree = "<group>"; };
 		A7B5022B17E8B98E00725430 /* TBBackdropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropView.h; path = ../../TBBackdropView/TBBackdropView.h; sourceTree = "<group>"; };
 		A7B5022C17E8B98E00725430 /* TBBackdropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropView.m; path = ../../TBBackdropView/TBBackdropView.m; sourceTree = "<group>"; };
+		A7DBCA4D17F69C1D00CB9878 /* TBBackdropViewSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettings.h; path = ../../TBBackdropView/TBBackdropViewSettings.h; sourceTree = "<group>"; };
+		A7DBCA4E17F69C1D00CB9878 /* TBBackdropViewSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettings.m; path = ../../TBBackdropView/TBBackdropViewSettings.m; sourceTree = "<group>"; };
+		A7DBCA5317F6A47700CB9878 /* TBBackdropViewSettingsLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsLight.h; path = ../../TBBackdropView/TBBackdropViewSettingsLight.h; sourceTree = "<group>"; };
+		A7DBCA5417F6A47700CB9878 /* TBBackdropViewSettingsLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsLight.m; path = ../../TBBackdropView/TBBackdropViewSettingsLight.m; sourceTree = "<group>"; };
+		A7DBCA5617F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsAdaptiveLight.h; path = ../../TBBackdropView/TBBackdropViewSettingsAdaptiveLight.h; sourceTree = "<group>"; };
+		A7DBCA5717F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsAdaptiveLight.m; path = ../../TBBackdropView/TBBackdropViewSettingsAdaptiveLight.m; sourceTree = "<group>"; };
+		A7DBCA5917F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsBlur.h; path = ../../TBBackdropView/TBBackdropViewSettingsBlur.h; sourceTree = "<group>"; };
+		A7DBCA5A17F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsBlur.m; path = ../../TBBackdropView/TBBackdropViewSettingsBlur.m; sourceTree = "<group>"; };
+		A7DBCA5C17F6AA0300CB9878 /* TBBackdropViewSettingsColored.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsColored.h; path = ../../TBBackdropView/TBBackdropViewSettingsColored.h; sourceTree = "<group>"; };
+		A7DBCA5D17F6AA0300CB9878 /* TBBackdropViewSettingsColored.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsColored.m; path = ../../TBBackdropView/TBBackdropViewSettingsColored.m; sourceTree = "<group>"; };
+		A7DBCA5F17F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsColorSample.h; path = ../../TBBackdropView/TBBackdropViewSettingsColorSample.h; sourceTree = "<group>"; };
+		A7DBCA6017F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsColorSample.m; path = ../../TBBackdropView/TBBackdropViewSettingsColorSample.m; sourceTree = "<group>"; };
+		A7DBCA6217F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsCombiner.h; path = ../../TBBackdropView/TBBackdropViewSettingsCombiner.h; sourceTree = "<group>"; };
+		A7DBCA6317F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsCombiner.m; path = ../../TBBackdropView/TBBackdropViewSettingsCombiner.m; sourceTree = "<group>"; };
+		A7DBCA6A17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsDarkLow.h; path = ../../TBBackdropView/TBBackdropViewSettingsDarkLow.h; sourceTree = "<group>"; };
+		A7DBCA6B17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsDarkLow.m; path = ../../TBBackdropView/TBBackdropViewSettingsDarkLow.m; sourceTree = "<group>"; };
+		A7DBCA7317F6ADCC00CB9878 /* TBBackdropViewSettingsDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsDark.h; path = ../../TBBackdropView/TBBackdropViewSettingsDark.h; sourceTree = "<group>"; };
+		A7DBCA7417F6ADCC00CB9878 /* TBBackdropViewSettingsDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsDark.m; path = ../../TBBackdropView/TBBackdropViewSettingsDark.m; sourceTree = "<group>"; };
+		A7DBCA7617F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsDarkWithZoom.h; path = ../../TBBackdropView/TBBackdropViewSettingsDarkWithZoom.h; sourceTree = "<group>"; };
+		A7DBCA7717F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsDarkWithZoom.m; path = ../../TBBackdropView/TBBackdropViewSettingsDarkWithZoom.m; sourceTree = "<group>"; };
+		A7DBCA7917F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsLightLow.h; path = ../../TBBackdropView/TBBackdropViewSettingsLightLow.h; sourceTree = "<group>"; };
+		A7DBCA7A17F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsLightLow.m; path = ../../TBBackdropView/TBBackdropViewSettingsLightLow.m; sourceTree = "<group>"; };
+		A7DBCA7C17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsNonAdaptive.h; path = ../../TBBackdropView/TBBackdropViewSettingsNonAdaptive.h; sourceTree = "<group>"; };
+		A7DBCA7D17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsNonAdaptive.m; path = ../../TBBackdropView/TBBackdropViewSettingsNonAdaptive.m; sourceTree = "<group>"; };
+		A7DBCA7F17F6B03800CB9878 /* TBBackdropViewSettingsNone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsNone.h; path = ../../TBBackdropView/TBBackdropViewSettingsNone.h; sourceTree = "<group>"; };
+		A7DBCA8017F6B03800CB9878 /* TBBackdropViewSettingsNone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsNone.m; path = ../../TBBackdropView/TBBackdropViewSettingsNone.m; sourceTree = "<group>"; };
+		A7DBCA8217F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsSemiLight.h; path = ../../TBBackdropView/TBBackdropViewSettingsSemiLight.h; sourceTree = "<group>"; };
+		A7DBCA8317F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsSemiLight.m; path = ../../TBBackdropView/TBBackdropViewSettingsSemiLight.m; sourceTree = "<group>"; };
+		A7DBCA8517F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsUltraDark.h; path = ../../TBBackdropView/TBBackdropViewSettingsUltraDark.h; sourceTree = "<group>"; };
+		A7DBCA8617F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsUltraDark.m; path = ../../TBBackdropView/TBBackdropViewSettingsUltraDark.m; sourceTree = "<group>"; };
+		A7DBCA8B17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsUltraLight.h; path = ../../TBBackdropView/TBBackdropViewSettingsUltraLight.h; sourceTree = "<group>"; };
+		A7DBCA8C17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsUltraLight.m; path = ../../TBBackdropView/TBBackdropViewSettingsUltraLight.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +214,38 @@
 			children = (
 				A7B5022B17E8B98E00725430 /* TBBackdropView.h */,
 				A7B5022C17E8B98E00725430 /* TBBackdropView.m */,
+				A7DBCA4D17F69C1D00CB9878 /* TBBackdropViewSettings.h */,
+				A7DBCA4E17F69C1D00CB9878 /* TBBackdropViewSettings.m */,
+				A7DBCA5317F6A47700CB9878 /* TBBackdropViewSettingsLight.h */,
+				A7DBCA5417F6A47700CB9878 /* TBBackdropViewSettingsLight.m */,
+				A7DBCA5617F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.h */,
+				A7DBCA5717F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.m */,
+				A7DBCA5917F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.h */,
+				A7DBCA5A17F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.m */,
+				A7DBCA5C17F6AA0300CB9878 /* TBBackdropViewSettingsColored.h */,
+				A7DBCA5D17F6AA0300CB9878 /* TBBackdropViewSettingsColored.m */,
+				A7DBCA5F17F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.h */,
+				A7DBCA6017F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.m */,
+				A7DBCA6217F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.h */,
+				A7DBCA6317F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.m */,
+				A7DBCA7317F6ADCC00CB9878 /* TBBackdropViewSettingsDark.h */,
+				A7DBCA7417F6ADCC00CB9878 /* TBBackdropViewSettingsDark.m */,
+				A7DBCA6A17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.h */,
+				A7DBCA6B17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.m */,
+				A7DBCA7617F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.h */,
+				A7DBCA7717F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.m */,
+				A7DBCA7917F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.h */,
+				A7DBCA7A17F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.m */,
+				A7DBCA7C17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.h */,
+				A7DBCA7D17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.m */,
+				A7DBCA7F17F6B03800CB9878 /* TBBackdropViewSettingsNone.h */,
+				A7DBCA8017F6B03800CB9878 /* TBBackdropViewSettingsNone.m */,
+				A7DBCA8217F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.h */,
+				A7DBCA8317F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.m */,
+				A7DBCA8517F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.h */,
+				A7DBCA8617F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m */,
+				A7DBCA8B17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.h */,
+				A7DBCA8C17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m */,
 			);
 			name = TBBackdropView;
 			path = TBBackdropViewExample;
@@ -269,11 +349,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7DBCA6417F6AC3500CB9878 /* TBBackdropViewSettingsCombiner.m in Sources */,
+				A7DBCA6C17F6AD6200CB9878 /* TBBackdropViewSettingsDarkLow.m in Sources */,
+				A7DBCA7E17F6AFCD00CB9878 /* TBBackdropViewSettingsNonAdaptive.m in Sources */,
+				A7DBCA8D17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m in Sources */,
+				A7DBCA5B17F6A9AD00CB9878 /* TBBackdropViewSettingsBlur.m in Sources */,
+				A7DBCA7517F6ADCC00CB9878 /* TBBackdropViewSettingsDark.m in Sources */,
 				A7B5020917E8B2F000725430 /* TBViewController.m in Sources */,
+				A7DBCA6117F6AA6500CB9878 /* TBBackdropViewSettingsColorSample.m in Sources */,
+				A7DBCA5517F6A47700CB9878 /* TBBackdropViewSettingsLight.m in Sources */,
+				A7DBCA8417F6B09300CB9878 /* TBBackdropViewSettingsSemiLight.m in Sources */,
 				A7B5022A17E8B41F00725430 /* TBTableManager.m in Sources */,
+				A7DBCA8717F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m in Sources */,
+				A7DBCA8117F6B03800CB9878 /* TBBackdropViewSettingsNone.m in Sources */,
+				A7DBCA5E17F6AA0300CB9878 /* TBBackdropViewSettingsColored.m in Sources */,
 				A7B5020317E8B2F000725430 /* TBAppDelegate.m in Sources */,
+				A7DBCA7B17F6AF7100CB9878 /* TBBackdropViewSettingsLightLow.m in Sources */,
 				A7B5022D17E8B98E00725430 /* TBBackdropView.m in Sources */,
 				A7B501FF17E8B2F000725430 /* main.m in Sources */,
+				A7DBCA5817F6A8F100CB9878 /* TBBackdropViewSettingsAdaptiveLight.m in Sources */,
+				A7DBCA7817F6AEC500CB9878 /* TBBackdropViewSettingsDarkWithZoom.m in Sources */,
+				A7DBCA4F17F69C1D00CB9878 /* TBBackdropViewSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
