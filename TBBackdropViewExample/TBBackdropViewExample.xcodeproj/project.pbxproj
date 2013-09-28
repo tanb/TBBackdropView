@@ -107,6 +107,7 @@
 		A7DBCA8617F6B0F300CB9878 /* TBBackdropViewSettingsUltraDark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsUltraDark.m; path = ../../TBBackdropView/TBBackdropViewSettingsUltraDark.m; sourceTree = "<group>"; };
 		A7DBCA8B17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TBBackdropViewSettingsUltraLight.h; path = ../../TBBackdropView/TBBackdropViewSettingsUltraLight.h; sourceTree = "<group>"; };
 		A7DBCA8C17F6B57700CB9878 /* TBBackdropViewSettingsUltraLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TBBackdropViewSettingsUltraLight.m; path = ../../TBBackdropView/TBBackdropViewSettingsUltraLight.m; sourceTree = "<group>"; };
+		A7DBCA8E17F70E1000CB9878 /* TBBackdropViewSettingsSampleHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBBackdropViewSettingsSampleHeaders.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +175,7 @@
 				A7B5020817E8B2F000725430 /* TBViewController.m */,
 				A7B5022817E8B41F00725430 /* TBTableManager.h */,
 				A7B5022917E8B41F00725430 /* TBTableManager.m */,
+				A7DBCA8E17F70E1000CB9878 /* TBBackdropViewSettingsSampleHeaders.h */,
 				A7B5020A17E8B2F000725430 /* Images.xcassets */,
 				A7B501F917E8B2F000725430 /* Supporting Files */,
 			);

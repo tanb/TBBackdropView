@@ -9,34 +9,56 @@
 #import "TBViewController.h"
 #import "TBTableManager.h"
 #import "TBBackdropView.h"
+#import "TBBackdropViewSettingsSampleHeaders.h"
+
 
 @interface TBViewController ()
 @property (nonatomic) TBTableManager *tableManager;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
+
 @implementation TBViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.tableManager = [[TBTableManager alloc] initWithManagedTableView:self.tableView];
+    
+    [self _configureSampleDropViews];
 }
 
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)_configureSampleDropViews
 {
-    [super viewDidAppear:animated];
+    NSArray *settingsSamples =
+    @[[[TBBackdropViewSettings alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsLight alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsAdaptiveLight alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsBlur alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsColored alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsColorSample alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsCombiner alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsDark alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsDarkLow alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsDarkWithZoom alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsLightLow alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsNonAdaptive alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsNone alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsSemiLight alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsUltraDark alloc] initWithDefaultValues],
+      [[TBBackdropViewSettingsUltraLight alloc] initWithDefaultValues]];
     
-    for (int i = 0; i < 16; i++) {
-        int x = (i % 2) ? 160 : 35;
-        int y = 60 * (i/2) + 40;
+    [settingsSamples enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        int x = (idx % 2) ? 160 : 35;
+        int y = 60 * (idx/2) + 40;
         TBBackdropView *dropView =
         [[TBBackdropView alloc] initWithFrame:CGRectMake(x, y, 125, 50)
-                                 settingsType:i];
+                                     settings:obj];
         dropView.userInteractionEnabled = NO;
         [self.view addSubview:dropView];
-    }
+    }];
 }
 
 @end
